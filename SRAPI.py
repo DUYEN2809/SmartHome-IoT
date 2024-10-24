@@ -1,5 +1,5 @@
 import os
-from fastapi import FastAPI, UploadFile
+from fastapi import Body, FastAPI, UploadFile
 from fastapi.responses import FileResponse
 import soundfile as sf
 import librosa
@@ -7,7 +7,8 @@ from pydub import AudioSegment
 from pathlib import Path
 from transformers import pipeline
 from transcriber import TCB
-
+from TtS import TTS
+from pydantic import BaseModel
 app = FastAPI()
 #make api to upload wav file and recive transcription
 @app.post("/upload")
@@ -38,3 +39,22 @@ async def transcribe_audio(file: UploadFile):
     os.remove("temp_audio.wav")
 
     return {"message": transcription}
+
+class TTSRequest(BaseModel):
+    body: str
+
+@app.post("/tts")
+async def tts_text(request: TTSRequest):
+    """
+    API endpoint for text-to-speech conversion.
+
+    Takes a string as input and returns the synthesized audio in JSON format.
+
+    Raises:
+        HTTPException: If an error occurs during TTS generation.
+    """
+    print(request.body)
+    TTS(text=request.body).tts()
+    #read output.wav and return as message
+
+    return {"message": "TTS generated successfully"}
