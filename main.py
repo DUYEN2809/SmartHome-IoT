@@ -1,7 +1,6 @@
 import soundfile as sf
 import librosa
 import streamlit as st
-from audiorecorder import audiorecorder
 from pydub import AudioSegment
 from pathlib import Path
 from transformers import pipeline
