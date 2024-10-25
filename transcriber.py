@@ -12,7 +12,7 @@ class TCB():
         output = self.transcriber(self.y)['text']
         return output
     device = torch.device('cuda')
-    transcriber = pipeline("automatic-speech-recognition", model="vinai/PhoWhisper-small", device=0)
+    transcriber = pipeline("automatic-speech-recognition", model="vinai/PhoWhisper-small", device=device)
     def Transciber(self,save_path=None, wave=None, **kwargs):
             if save_path is not None:
                 wave , ss=convert_audio(save_path=save_path)
