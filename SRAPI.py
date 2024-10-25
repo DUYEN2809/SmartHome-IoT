@@ -59,3 +59,4 @@ async def tts_text(request: TTSRequest):
     #read output.wav and return as message
 
     return FileResponse("output.wav")
+
