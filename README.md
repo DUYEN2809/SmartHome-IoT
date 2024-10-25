@@ -30,3 +30,10 @@ Chọn Allow the connection và nhấn Next.
 Chọn các mục Domain, Private, và Public theo yêu cầu, rồi nhấn Next.
 Đặt tên cho rule, ví dụ: "Allow Port 8000", rồi nhấn Finish.
 ```
+
+### Tạo Tunnels bằng Ngrok cho Deloy Api lên Internet
+Nếu bạn muốn deploy API của mình lên internet, hãy sử dụng tunnels ngrok. Như vậy, bạn có thể truy cập ứng dụng của mình từ nơi khác.
+
+```bash
+ngrok http 8000
+```
