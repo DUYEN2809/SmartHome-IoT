@@ -10,6 +10,7 @@ from transcriber import TCB
 from TtS import TTS
 from pydantic import BaseModel
 app = FastAPI()
+from fastapi.responses import FileResponse
 #make api to upload wav file and recive transcription
 @app.post("/upload")
 async def create_item(file: bytes):
@@ -57,4 +58,4 @@ async def tts_text(request: TTSRequest):
     TTS(text=request.body).tts()
     #read output.wav and return as message
 
-    return {"message": "TTS generated successfully"}
+    return FileResponse("output.wav")
