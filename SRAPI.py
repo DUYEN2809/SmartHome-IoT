@@ -9,6 +9,7 @@ from transformers import pipeline
 from transcriber import TCB
 from TtS import TTS
 from pydantic import BaseModel
+from Gemini.Gemini import GeminiAPI
 app = FastAPI()
 from fastapi.responses import FileResponse
 #make api to upload wav file and recive transcription
@@ -59,4 +60,18 @@ async def tts_text(request: TTSRequest):
     #read output.wav and return as message
 
     return FileResponse("output.wav")
+
+class TextRequest(BaseModel):
+    body: str
+
+api_key_file_path = 'D://api_key.txt'  # Đường dẫn đến tệp chứa khóa API
+gemini_api = GeminiAPI(api_key_file_path)
+
+@app.post("/gemini")
+async def call_gemini(request: TextRequest):
+    """
+    Endpoint để gọi API Gemini với văn bản đầu vào.
+    """
+    result = gemini_api.call_api(request.body)
+    return result
 

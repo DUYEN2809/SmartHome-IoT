@@ -19,7 +19,7 @@ with open(audio_file_path, "rb") as audio_file:
     else:
         print("Lỗi khi gọi API:", response.text)
 
-data = {"body": "alo hãy mở máy tính của tôi dùng cái"}
+data = {"body": "Xin chào"}
 
 response = requests.post(url2, json=data)
 if response.status_code == 200:
@@ -27,5 +27,18 @@ if response.status_code == 200:
     with open("output1.wav", "wb") as f:
         f.write(response.content)
     print("Tệp âm thanh đã được lưu thành công.")
+else:
+    print(f"Có lỗi xảy ra: {response.status_code} - {response.text}")
+
+#call api gemnini
+url3 = "http://192.168.1.17:8000//gemini"
+data = {"body": "Bật đèn phòng ngủ"}
+
+# Gửi yêu cầu POST
+response = requests.post(url3, json=data)
+
+if response.status_code == 200:
+    #print json
+    print(response.json())
 else:
     print(f"Có lỗi xảy ra: {response.status_code} - {response.text}")
