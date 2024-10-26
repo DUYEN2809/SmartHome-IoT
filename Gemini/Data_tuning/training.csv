@@ -1,0 +1,401 @@
+text_input,output
+làm ơn hạ TV phòng khách,device.livingroom.TV.decrease
+phiền bạn tắt quạt phòng khách,device.livingroom.fan.0
+phiền bạn giảm bếp phòng bếp,device.kitchen.stove.decrease
+kiểm tra quạt phòng tắm với,status.bathroom.fan
+kiểm tra tủ lạnh phòng bếp nào,status.kitchen.refrigerator
+xem bếp phòng bếp với,status.kitchen.stove
+cho tôi giảm TV phòng khách,device.livingroom.TV.decrease
+cho tôi mở vòi sen phòng tắm,device.bathroom.shower.1
+mở máy sưởi phòng tắm với,device.bathroom.heater.1
+giảm tủ lạnh phòng bếp với,device.kitchen.refrigerator.decrease
+bật đèn phòng bếp đi,device.kitchen.light.1
+giảm rèm phòng ngủ với,device.bedroom.curtain.decrease
+tăng quạt phòng tắm giúp tôi,device.bathroom.fan.increase
+giảm quạt phòng tắm nào,device.bathroom.fan.decrease
+phiền bạn kiểm tra đèn phòng bếp,status.kitchen.light
+tắt vòi sen phòng tắm với,device.bathroom.shower.0
+kéo rèm phòng ngủ lên đi,device.bedroom.curtain.increase
+tắt điều hòa phòng ngủ với,device.bedroom.airconditioner.0
+kiểm tra TV phòng khách nào,status.livingroom.TV
+cho tôi xem điều hòa phòng ngủ,status.bedroom.airconditioner
+phiền bạn tắt đèn phòng ngủ,device.bedroom.light.0
+cho tôi tắt điều hòa phòng ngủ,device.bedroom.airconditioner.0
+bật quạt phòng tắm nào,device.bathroom.fan.1
+mở rèm phòng ngủ nào,device.bedroom.curtain.1
+xem TV phòng khách với,status.livingroom.TV
+làm ơn tăng bếp phòng bếp,device.kitchen.stove.increase
+giảm quạt phòng ngủ giúp tôi,device.bedroom.fan.decrease
+tắt quạt hút phòng bếp với,device.kitchen.exhaust_fan.0
+tắt quạt hút phòng bếp nào,device.kitchen.exhaust_fan.0
+tắt quạt phòng ngủ với,device.bedroom.fan.0
+tắt loa phòng khách giúp tôi,device.livingroom.speaker.0
+phiền bạn giảm máy sưởi phòng tắm,device.bathroom.heater.decrease
+hạ vòi sen phòng tắm nào,device.bathroom.shower.decrease
+tắt tủ lạnh phòng bếp nào,device.kitchen.refrigerator.0
+tắt quạt phòng khách đi,device.livingroom.fan.0
+phiền bạn hạ TV phòng khách,device.livingroom.TV.decrease
+làm ơn bật điều hòa phòng ngủ,device.bedroom.airconditioner.1
+làm ơn tăng điều hòa phòng ngủ,device.bedroom.airconditioner.increase
+hạ tủ lạnh phòng bếp nào,device.kitchen.refrigerator.decrease
+giảm rèm phòng ngủ đi,device.bedroom.curtain.decrease
+phiền bạn tắt quạt phòng ngủ,device.bedroom.fan.0
+kiểm tra quạt phòng khách giúp tôi,status.livingroom.fan
+hạ máy sưởi phòng tắm đi,device.bathroom.heater.decrease
+làm ơn tắt vòi sen phòng tắm,device.bathroom.shower.0
+tăng loa phòng khách với,device.livingroom.speaker.increase
+bật TV phòng khách nào,device.livingroom.TV.1
+bật quạt phòng tắm nào,device.bathroom.fan.1
+tắt điều hòa phòng ngủ giúp tôi,device.bedroom.airconditioner.0
+tắt quạt phòng khách đi,device.livingroom.fan.0
+làm ơn tăng quạt phòng khách,device.livingroom.fan.increase
+cho tôi hạ tủ lạnh phòng bếp,device.kitchen.refrigerator.decrease
+mở vòi sen phòng tắm giúp tôi,device.bathroom.shower.1
+tăng đèn phòng khách nào,device.livingroom.light.increase
+hạ TV phòng khách giúp tôi,device.livingroom.TV.decrease
+cho tôi xem quạt hút phòng bếp,status.kitchen.exhaust_fan
+tắt đèn phòng ngủ giúp tôi,device.bedroom.light.0
+tắt vòi sen phòng tắm giúp tôi,device.bathroom.shower.0
+giảm đèn phòng khách đi,device.livingroom.light.decrease
+cho tôi giảm vòi sen phòng tắm,device.bathroom.shower.decrease
+xem đèn phòng tắm đi,status.bathroom.light
+bật đèn phòng tắm với,device.bathroom.light.1
+tăng đèn phòng bếp giúp tôi,device.kitchen.light.increase
+làm ơn xem máy sưởi phòng tắm,status.bathroom.heater
+làm ơn bật đèn phòng ngủ,device.bedroom.light.1
+xem bếp phòng bếp nào,status.kitchen.stove
+giảm quạt phòng tắm giúp tôi,device.bathroom.fan.decrease
+tắt đèn phòng bếp đi,device.kitchen.light.0
+làm ơn giảm đèn phòng khách,device.livingroom.light.decrease
+cho tôi giảm điều hòa phòng ngủ,device.bedroom.airconditioner.decrease
+bật điều hòa phòng ngủ giúp tôi,device.bedroom.airconditioner.1
+phiền bạn xem quạt phòng tắm,status.bathroom.fan
+làm ơn hạ tủ lạnh phòng bếp,device.kitchen.refrigerator.decrease
+cho tôi hạ điều hòa phòng ngủ,device.bedroom.airconditioner.decrease
+làm ơn kiểm tra loa phòng khách,status.livingroom.speaker
+làm ơn xem máy sưởi phòng tắm,status.bathroom.heater
+kiểm tra quạt hút phòng bếp nào,status.kitchen.exhaust_fan
+cho tôi bật quạt phòng ngủ,device.bedroom.fan.1
+cho tôi xem quạt phòng khách,status.livingroom.fan
+tăng đèn phòng ngủ giúp tôi,device.bedroom.light.increase
+hạ TV phòng khách với,device.livingroom.TV.decrease
+làm ơn tăng đèn phòng tắm,device.bathroom.light.increase
+tăng đèn phòng khách nào,device.livingroom.light.increase
+tăng tủ lạnh phòng bếp nào,device.kitchen.refrigerator.increase
+cho tôi tắt đèn phòng khách,device.livingroom.light.0
+làm ơn tắt máy sưởi phòng tắm,device.bathroom.heater.0
+tăng đèn phòng tắm đi,device.bathroom.light.increase
+kiểm tra vòi sen phòng tắm đi,status.bathroom.shower
+bật quạt phòng tắm nào,device.bathroom.fan.1
+làm ơn tắt vòi sen phòng tắm,device.bathroom.shower.0
+làm ơn tắt tủ lạnh phòng bếp,device.kitchen.refrigerator.0
+mở TV phòng khách giúp tôi,device.livingroom.TV.1
+phiền bạn hạ máy sưởi phòng tắm,device.bathroom.heater.decrease
+phiền bạn giảm bếp phòng bếp,device.kitchen.stove.decrease
+cho tôi tắt vòi sen phòng tắm,device.bathroom.shower.0
+giảm quạt phòng ngủ nào,device.bedroom.fan.decrease
+làm ơn bật đèn phòng ngủ,device.bedroom.light.1
+kiểm tra tủ lạnh phòng bếp nào,status.kitchen.refrigerator
+tắt đèn phòng tắm giúp tôi,device.bathroom.light.0
+làm ơn tăng TV phòng khách,device.livingroom.TV.increase
+hạ loa phòng khách nào,device.livingroom.speaker.decrease
+kiểm tra TV phòng khách giúp tôi,status.livingroom.TV
+xem bếp phòng bếp giúp tôi,status.kitchen.stove
+tăng đèn phòng khách nào,device.livingroom.light.increase
+tăng tủ lạnh phòng bếp đi,device.kitchen.refrigerator.increase
+xem đèn phòng khách giúp tôi,status.livingroom.light
+phiền bạn kiểm tra loa phòng khách,status.livingroom.speaker
+tăng đèn phòng ngủ đi,device.bedroom.light.increase
+tắt tủ lạnh phòng bếp nào,device.kitchen.refrigerator.0
+tăng đèn phòng khách đi,device.livingroom.light.increase
+xem đèn phòng bếp giúp tôi,status.kitchen.light
+giảm bếp phòng bếp đi,device.kitchen.stove.decrease
+tắt vòi sen phòng tắm nào,device.bathroom.shower.0
+tắt đèn phòng khách nào,device.livingroom.light.0
+hạ TV phòng khách đi,device.livingroom.TV.decrease
+tắt vòi sen phòng tắm nào,device.bathroom.shower.0
+cho tôi xem loa phòng khách,status.livingroom.speaker
+kiểm tra đèn phòng tắm đi,status.bathroom.light
+kiểm tra bếp phòng bếp đi,status.kitchen.stove
+mở điều hòa phòng ngủ đi,device.bedroom.airconditioner.1
+giảm quạt hút phòng bếp nào,device.kitchen.exhaust_fan.decrease
+tăng quạt phòng khách đi,device.livingroom.fan.increase
+bật TV phòng khách đi,device.livingroom.TV.1
+hạ đèn phòng tắm với,device.bathroom.light.decrease
+làm ơn mở tủ lạnh phòng bếp,device.kitchen.refrigerator.1
+làm ơn bật đèn phòng khách,device.livingroom.light.1
+tăng quạt phòng khách với,device.livingroom.fan.increase
+tắt tủ lạnh phòng bếp đi,device.kitchen.refrigerator.0
+làm ơn giảm quạt phòng khách,device.livingroom.fan.decrease
+làm ơn tắt loa phòng khách,device.livingroom.speaker.0
+làm ơn tắt vòi sen phòng tắm,device.bathroom.shower.0
+xem quạt phòng tắm với,status.bathroom.fan
+phiền bạn bật quạt hút phòng bếp,device.kitchen.exhaust_fan.1
+giảm đèn phòng ngủ giúp tôi,device.bedroom.light.decrease
+phiền bạn giảm điều hòa phòng ngủ,device.bedroom.airconditioner.decrease
+cho tôi hạ quạt phòng tắm,device.bathroom.fan.decrease
+tăng vòi sen phòng tắm giúp tôi,device.bathroom.shower.increase
+làm ơn tắt điều hòa phòng ngủ,device.bedroom.airconditioner.0
+tăng loa phòng khách nào,device.livingroom.speaker.increase
+xem đèn phòng ngủ với,status.bedroom.light
+giảm đèn phòng khách giúp tôi,device.livingroom.light.decrease
+xem máy sưởi phòng tắm nào,status.bathroom.heater
+phiền bạn xem đèn phòng khách,status.livingroom.light
+phiền bạn mở loa phòng khách,device.livingroom.speaker.1
+kiểm tra đèn phòng khách đi,status.livingroom.light
+phiền bạn tắt đèn phòng tắm,device.bathroom.light.0
+tăng rèm phòng ngủ nào,device.bedroom.curtain.increase
+kiểm tra quạt phòng khách nào,status.livingroom.fan
+mở điều hòa phòng ngủ với,device.bedroom.airconditioner.1
+tắt đèn phòng tắm nào,device.bathroom.light.0
+tắt điều hòa phòng ngủ nào,device.bedroom.airconditioner.0
+hạ quạt phòng tắm nào,device.bathroom.fan.decrease
+cho tôi xem điều hòa phòng ngủ,status.bedroom.airconditioner
+mở tủ lạnh phòng bếp nào,device.kitchen.refrigerator.1
+kiểm tra đèn phòng tắm nào,status.bathroom.light
+làm ơn mở vòi sen phòng tắm,device.bathroom.shower.1
+giảm vòi sen phòng tắm nào,device.bathroom.shower.decrease
+xem máy sưởi phòng tắm giúp tôi,status.bathroom.heater
+hạ quạt phòng tắm nào,device.bathroom.fan.decrease
+cho tôi tắt đèn phòng ngủ,device.bedroom.light.0
+tắt đèn phòng tắm giúp tôi,device.bathroom.light.0
+tăng tủ lạnh phòng bếp với,device.kitchen.refrigerator.increase
+kéo rèm phòng ngủ xuống đi,device.bedroom.curtain.0
+phiền bạn kéo rèm phòng ngủ lên,device.bedroom.curtain.1
+tăng bếp phòng bếp giúp tôi,device.kitchen.stove.increase
+làm ơn tăng điều hòa phòng ngủ,device.bedroom.airconditioner.increase
+làm ơn giảm quạt phòng tắm,device.bathroom.fan.decrease
+cho tôi tắt tủ lạnh phòng bếp,device.kitchen.refrigerator.0
+hạ bếp phòng bếp nào,device.kitchen.stove.decrease
+giảm đèn phòng bếp giúp tôi,device.kitchen.light.decrease
+làm ơn tăng đèn phòng ngủ,device.bedroom.light.increase
+mở máy sưởi phòng tắm giúp tôi,device.bathroom.heater.1
+tăng loa phòng khách với,device.livingroom.speaker.increase
+xem loa phòng khách giúp tôi,status.livingroom.speaker
+tăng bếp phòng bếp đi,device.kitchen.stove.increase
+mở máy sưởi phòng tắm đi,device.bathroom.heater.1
+tăng loa phòng khách nào,device.livingroom.speaker.increase
+cho tôi mở tủ lạnh phòng bếp,device.kitchen.refrigerator.1
+làm ơn tăng đèn phòng khách,device.livingroom.light.increase
+bật đèn phòng ngủ nào,device.bedroom.light.1
+cho tôi tắt quạt hút phòng bếp,device.kitchen.exhaust_fan.0
+xem quạt phòng khách đi,status.livingroom.fan
+tăng quạt phòng khách giúp tôi,device.livingroom.fan.increase
+phiền bạn kiểm tra TV phòng khách,status.livingroom.TV
+làm ơn giảm loa phòng khách,device.livingroom.speaker.decrease
+kiểm tra loa phòng khách với,status.livingroom.speaker
+kiểm tra quạt phòng khách đi,status.livingroom.fan
+hạ quạt phòng ngủ nào,device.bedroom.fan.decrease
+phiền bạn xem bếp phòng bếp,status.kitchen.stove
+phiền bạn kiểm tra điều hòa phòng ngủ,status.bedroom.airconditioner
+cho tôi bật quạt hút phòng bếp,device.kitchen.exhaust_fan.1
+làm ơn tắt đèn phòng ngủ,device.bedroom.light.0
+bật đèn phòng ngủ nào,device.bedroom.light.1
+cho tôi giảm điều hòa phòng ngủ,device.bedroom.airconditioner.decrease
+phiền bạn bật quạt phòng ngủ,device.bedroom.fan.1
+giảm TV phòng khách nào,device.livingroom.TV.decrease
+cho tôi tăng đèn phòng khách,device.livingroom.light.increase
+tăng tủ lạnh phòng bếp giúp tôi,device.kitchen.refrigerator.increase
+giảm vòi sen phòng tắm nào,device.bathroom.shower.decrease
+làm ơn giảm đèn phòng tắm,device.bathroom.light.decrease
+phiền bạn bật tủ lạnh phòng bếp,device.kitchen.refrigerator.1
+cho tôi dừng rèm phòng ngủ,device.bedroom.curtain.0
+bật tủ lạnh phòng bếp giúp tôi,device.kitchen.refrigerator.1
+mở đèn phòng ngủ nào,device.bedroom.light.1
+phiền bạn tắt vòi sen phòng tắm,device.bathroom.shower.0
+cho tôi bật quạt phòng tắm,device.bathroom.fan.1
+giảm điều hòa phòng ngủ đi,device.bedroom.airconditioner.decrease
+tăng tủ lạnh phòng bếp giúp tôi,device.kitchen.refrigerator.increase
+kéo rèm phòng ngủ lên với,device.bedroom.curtain.1
+tắt quạt phòng ngủ giúp tôi,device.bedroom.fan.0
+hạ TV phòng khách giúp tôi,device.livingroom.TV.decrease
+tắt đèn phòng khách giúp tôi,device.livingroom.light.0
+phiền bạn giảm TV phòng khách,device.livingroom.TV.decrease
+mở loa phòng khách nào,device.livingroom.speaker.1
+hạ bếp phòng bếp với,device.kitchen.stove.decrease
+hạ TV phòng khách nào,device.livingroom.TV.decrease
+làm ơn tắt máy sưởi phòng tắm,device.bathroom.heater.0
+cho tôi mở đèn phòng khách,device.livingroom.light.1
+tắt bếp phòng bếp với,device.kitchen.stove.0
+giảm điều hòa phòng ngủ giúp tôi,device.bedroom.airconditioner.decrease
+kiểm tra quạt hút phòng bếp với,status.kitchen.exhaust_fan
+tăng đèn phòng tắm đi,device.bathroom.light.increase
+kéo rèm phòng ngủ lên giúp tôi,device.bedroom.curtain.1
+làm ơn bật quạt hút phòng bếp,device.kitchen.exhaust_fan.1
+phiền bạn giảm máy sưởi phòng tắm,device.bathroom.heater.decrease
+hạ tủ lạnh phòng bếp nào,device.kitchen.refrigerator.decrease
+làm ơn hạ loa phòng khách,device.livingroom.speaker.decrease
+bật quạt phòng tắm với,device.bathroom.fan.1
+làm ơn tăng đèn phòng tắm,device.bathroom.light.increase
+phiền bạn mở đèn phòng khách,device.livingroom.light.1
+tăng TV phòng khách với,device.livingroom.TV.increase
+hạ rèm phòng ngủ với,device.bedroom.curtain.decrease
+Làm ơn nâng TV phòng khách,device.livingroom.TV.increase
+Cho tôi giảm đèn bếp,device.kitchen.light.decrease
+Phiền bạn xem đèn phòng tắm,status.bathroom.light
+Cho tôi kiểm tra quạt phòng khách,status.livingroom.fan
+Mở điều hòa phòng ngủ với,device.bedroom.airconditioner.1
+Ngừng đèn phòng khách nào,device.livingroom.light.0
+Làm ơn xem đèn bếp,status.kitchen.light
+Cho tôi xem quạt phòng ngủ,status.bedroom.fan
+Cho tôi mở quạt hút bếp,device.kitchen.exhaust_fan.1
+Cho tôi kiểm tra điều hòa phòng ngủ,status.bedroom.airconditioner
+Phiền bạn tăng vòi sen phòng tắm,device.bathroom.shower.increase
+Cho tôi đóng máy sưởi phòng tắm,device.bathroom.heater.0
+Khởi động đèn bếp nào,device.kitchen.light.1
+Hạ đèn phòng tắm nào,device.bathroom.light.decrease
+Cho tôi mở quạt phòng ngủ,device.bedroom.fan.1
+Kiểm tra quạt phòng khách đi,status.livingroom.fan
+Phiền bạn kiểm tra máy sưởi phòng tắm,status.bathroom.heater
+Làm ơn đóng tủ lạnh bếp,device.kitchen.refrigerator.0
+Giảm quạt phòng ngủ đi,device.bedroom.fan.decrease
+Kiểm tra loa phòng khách nào,status.livingroom.speaker
+Nâng quạt phòng tắm nào,device.bathroom.fan.increase
+Làm ơn mở quạt phòng ngủ,device.bedroom.fan.1
+Cho tôi ngừng quạt phòng khách,device.livingroom.fan.0
+Giảm loa phòng khách với,device.livingroom.speaker.decrease
+Làm ơn tăng đèn bếp,device.kitchen.light.increase
+Mở quạt hút bếp đi,device.kitchen.exhaust_fan.1
+Làm ơn khởi động quạt phòng tắm,device.bathroom.fan.1
+Cho tôi ngừng đèn phòng tắm,device.bathroom.light.0
+Ngừng quạt hút bếp đi,device.kitchen.exhaust_fan.0
+Mở tủ lạnh bếp với,device.kitchen.refrigerator.1
+Kiểm tra quạt phòng khách giúp tôi,status.livingroom.fan
+Tăng quạt phòng khách đi,device.livingroom.fan.increase
+Xem TV phòng khách với,status.livingroom.TV
+Tắt máy sưởi phòng tắm nào,device.bathroom.heater.0
+Phiền bạn giảm đèn phòng tắm,device.bathroom.light.decrease
+Xem quạt hút bếp giúp tôi,status.kitchen.exhaust_fan
+Nâng đèn phòng khách nào,device.livingroom.light.increase
+Giảm quạt phòng khách với,device.livingroom.fan.decrease
+Kiểm tra quạt phòng ngủ với,status.bedroom.fan
+Ngừng đèn phòng tắm giúp tôi,device.bathroom.light.0
+Tăng điều hòa phòng ngủ giúp tôi,device.bedroom.airconditioner.increase
+Xem quạt hút bếp giúp tôi,status.kitchen.exhaust_fan
+Cho tôi giảm TV phòng khách,device.livingroom.TV.decrease
+Hạ đèn bếp nào,device.kitchen.light.decrease
+Cho tôi tăng máy sưởi phòng tắm,device.bathroom.heater.increase
+Phiền bạn khởi động quạt phòng khách,device.livingroom.fan.1
+Cho tôi kiểm tra đèn bếp,status.kitchen.light
+Cho tôi tăng quạt hút bếp,device.kitchen.exhaust_fan.increase
+Cho tôi xem đèn phòng tắm,status.bathroom.light
+Nâng vòi sen phòng tắm nào,device.bathroom.shower.increase
+Hạ vòi sen phòng tắm với,device.bathroom.shower.decrease
+Làm ơn ngừng điều hòa phòng ngủ,device.bedroom.airconditioner.0
+Cho tôi bật đèn phòng khách,device.livingroom.light.1
+Xem vòi sen phòng tắm nào,status.bathroom.shower
+Tắt quạt phòng ngủ nào,device.bedroom.fan.0
+Hạ vòi sen phòng tắm nào,device.bathroom.shower.decrease
+Phiền bạn xem máy sưởi phòng tắm,status.bathroom.heater
+Tăng điều hòa phòng ngủ giúp tôi,device.bedroom.airconditioner.increase
+Nâng đèn phòng ngủ nào,device.bedroom.light.increase
+Cho tôi tăng quạt hút bếp,device.kitchen.exhaust_fan.increase
+Đóng quạt phòng tắm giúp tôi,device.bathroom.fan.0
+Giảm loa phòng khách đi,device.livingroom.speaker.decrease
+Cho tôi xem tủ lạnh bếp,status.kitchen.refrigerator
+Tăng loa phòng khách nào,device.livingroom.speaker.increase
+Phiền bạn hạ rèm phòng ngủ,device.bedroom.curtain.decrease
+Bật rèm phòng ngủ nào,device.bedroom.curtain.1
+Cho tôi bật quạt hút bếp,device.kitchen.exhaust_fan.1
+Tắt tủ lạnh bếp đi,device.kitchen.refrigerator.0
+Khởi động tủ lạnh bếp đi,device.kitchen.refrigerator.1
+Khởi động loa phòng khách giúp tôi,device.livingroom.speaker.1
+Cho tôi tăng rèm phòng ngủ,device.bedroom.curtain.increase
+Giảm quạt phòng khách giúp tôi,device.livingroom.fan.decrease
+Cho tôi xem vòi sen phòng tắm,status.bathroom.shower
+Phiền bạn ngừng điều hòa phòng ngủ,device.bedroom.airconditioner.0
+Ngừng quạt phòng khách giúp tôi,device.livingroom.fan.0
+Tăng bếp đi,device.kitchen.stove.increase
+Phiền bạn khởi động vòi sen phòng tắm,device.bathroom.shower.1
+Giảm quạt hút bếp với,device.kitchen.exhaust_fan.decrease
+Cho tôi giảm quạt phòng khách,device.livingroom.fan.decrease
+Xem đèn phòng ngủ giúp tôi,status.bedroom.light
+Làm ơn tắt loa phòng khách,device.livingroom.speaker.0
+Cho tôi xem điều hòa phòng ngủ,status.bedroom.airconditioner
+Đóng rèm phòng ngủ giúp tôi,device.bedroom.curtain.0
+Làm ơn kiểm tra quạt phòng ngủ,status.bedroom.fan
+Làm ơn hạ đèn phòng khách,device.livingroom.light.decrease
+Làm ơn đóng tủ lạnh bếp,device.kitchen.refrigerator.0
+Hạ vòi sen phòng tắm với,device.bathroom.shower.decrease
+Khởi động loa phòng khách giúp tôi,device.livingroom.speaker.1
+Cho tôi ngừng máy sưởi phòng tắm,device.bathroom.heater.0
+Phiền bạn bật đèn phòng tắm,device.bathroom.light.1
+Bật rèm phòng ngủ giúp tôi,device.bedroom.curtain.1
+Mở đèn phòng khách nào,device.livingroom.light.1
+Đóng rèm phòng ngủ nào,device.bedroom.curtain.0
+Xem đèn phòng tắm giúp tôi,status.bathroom.light
+Xem máy sưởi phòng tắm nào,status.bathroom.heater
+Phiền bạn đóng đèn phòng khách,device.livingroom.light.0
+Khởi động rèm phòng ngủ với,device.bedroom.curtain.1
+Bật tủ lạnh bếp nào,device.kitchen.refrigerator.1
+Phiền bạn hạ đèn phòng ngủ,device.bedroom.light.decrease
+Phiền bạn đóng đèn phòng khách,device.livingroom.light.0
+Hạ đèn bếp với,device.kitchen.light.decrease
+Cho tôi giảm rèm phòng ngủ,device.bedroom.curtain.decrease
+Phiền bạn xem điều hòa phòng ngủ,status.bedroom.airconditioner
+Bật quạt phòng khách nào,device.livingroom.fan.1
+Làm ơn ngừng TV phòng khách,device.livingroom.TV.0
+Xem bếp nào,status.kitchen.stove
+Cho tôi tắt điều hòa phòng ngủ,device.bedroom.airconditioner.0
+Giảm quạt hút bếp giúp tôi,device.kitchen.exhaust_fan.decrease
+Hạ quạt phòng khách với,device.livingroom.fan.decrease
+Cho tôi đóng đèn phòng tắm,device.bathroom.light.0
+Cho tôi giảm đèn bếp,device.kitchen.light.decrease
+Phiền bạn bật đèn bếp,device.kitchen.light.1
+Làm ơn tắt TV phòng khách,device.livingroom.TV.0
+Mở TV phòng khách nào,device.livingroom.TV.1
+Cho tôi đóng đèn phòng ngủ,device.bedroom.light.0
+Hạ tủ lạnh bếp với,device.kitchen.refrigerator.decrease
+Làm ơn khởi động rèm phòng ngủ,device.bedroom.curtain.1
+Xem đèn bếp với,status.kitchen.light
+Cho tôi hạ vòi sen phòng tắm,device.bathroom.shower.decrease
+Phiền bạn xem loa phòng khách,status.livingroom.speaker
+Hạ đèn phòng ngủ đi,device.bedroom.light.decrease
+Đóng quạt phòng tắm giúp tôi,device.bathroom.fan.0
+Cho tôi nâng bếp,device.kitchen.stove.increase
+Nâng đèn phòng tắm đi,device.bathroom.light.increase
+Nâng TV phòng khách giúp tôi,device.livingroom.TV.increase
+Làm ơn đóng loa phòng khách,device.livingroom.speaker.0
+Tăng rèm phòng ngủ đi,device.bedroom.curtain.increase
+Cho tôi giảm quạt phòng ngủ,device.bedroom.fan.decrease
+Tăng đèn phòng ngủ đi,device.bedroom.light.increase
+Giảm máy sưởi phòng tắm với,device.bathroom.heater.decrease
+Làm ơn hạ máy sưởi phòng tắm,device.bathroom.heater.decrease
+Phiền bạn hạ quạt phòng khách,device.livingroom.fan.decrease
+Giảm quạt hút bếp đi,device.kitchen.exhaust_fan.decrease
+Cho tôi kiểm tra quạt hút bếp,status.kitchen.exhaust_fan
+Tăng điều hòa phòng ngủ nào,device.bedroom.airconditioner.increase
+Làm ơn khởi động tủ lạnh bếp,device.kitchen.refrigerator.1
+Nâng đèn phòng tắm với,device.bathroom.light.increase
+Khởi động bếp giúp tôi,device.kitchen.stove.1
+Phiền bạn đóng tủ lạnh bếp,device.kitchen.refrigerator.0
+Bật vòi sen phòng tắm nào,device.bathroom.shower.1
+Cho tôi khởi động đèn phòng tắm,device.bathroom.light.1
+Cho tôi tăng đèn bếp,device.kitchen.light.increase
+Giảm tủ lạnh bếp đi,device.kitchen.refrigerator.decrease
+Giảm đèn phòng ngủ nào,device.bedroom.light.decrease
+Cho tôi nâng rèm phòng ngủ,device.bedroom.curtain.increase
+Tăng quạt phòng tắm với,device.bathroom.fan.increase
+Xem máy sưởi phòng tắm nào,status.bathroom.heater
+Bật quạt phòng ngủ đi,device.bedroom.fan.1
+Cho tôi khởi động quạt phòng tắm,device.bathroom.fan.1
+Hạ TV phòng khách giúp tôi,device.livingroom.TV.decrease
+Phiền bạn nâng đèn bếp,device.kitchen.light.increase
+Giảm đèn phòng khách nào,device.livingroom.light.decrease
+Phiền bạn bật đèn bếp,device.kitchen.light.1
+Cho tôi khởi động tủ lạnh bếp,device.kitchen.refrigerator.1
+Hạ đèn phòng ngủ đi,device.bedroom.light.decrease
+Xem máy sưởi phòng tắm nào,status.bathroom.heater
+Nâng bếp đi,device.kitchen.stove.increase
+Làm ơn nâng rèm phòng ngủ,device.bedroom.curtain.increase
+Phiền bạn hạ TV phòng khách,device.livingroom.TV.decrease
+Phiền bạn giảm loa phòng khách,device.livingroom.speaker.decrease
+Bật quạt phòng tắm đi,device.bathroom.fan.1
+Cho tôi khởi động loa phòng khách,device.livingroom.speaker.1
+Giảm điều hòa phòng ngủ đi,device.bedroom.airconditioner.decrease
+Nâng máy sưởi phòng tắm nào,device.bathroom.heater.increase
+Hạ đèn phòng tắm đi,device.bathroom.light.decrease
+Phiền bạn bật TV phòng khách,device.livingroom.TV.1
+Giảm quạt phòng khách đi,device.livingroom.fan.decrease
+Hạ vòi sen phòng tắm giúp tôi,device.bathroom.shower.decrease
+Phiền bạn bật rèm phòng ngủ,device.bedroom.curtain.1
