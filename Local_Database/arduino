@@ -1,0 +1,119 @@
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
+#include <WiFiClient.h>
+#include <ArduinoJson.h>
+
+const int L1 = D5; //livingroom
+const int L2 = D6; //bedroom
+const int L3 = D4; //kitchen
+const int L4 = D3; //staircase
+
+// Cấu hình Wi-Fi
+const char* ssid = "DESKTOP-EC0RIK5";  // Tên Wi-Fi
+const char* password = "83868386";     // Mật khẩu
+const char* serverName = "http://192.168.1.17:5000/get_devices"; // Địa chỉ IP của server Flask
+
+unsigned long lastTime = 0;
+unsigned long timerDelay = 5000;
+
+void connectToWiFi() {
+  Serial.println("Connecting to WiFi...");
+  WiFi.begin(ssid, password);
+
+  unsigned long startAttemptTime = millis();
+  while (WiFi.status() != WL_CONNECTED && millis() - startAttemptTime < 15000) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  if (WiFi.status() == WL_CONNECTED) {
+    Serial.println("\nConnected to WiFi!");
+    Serial.print("IP Address: ");
+    Serial.println(WiFi.localIP());
+  } else {
+    Serial.println("\nFailed to connect to WiFi. Check SSID/Password or signal strength.");
+    // Tùy chọn: restart thiết bị nếu cần thiết
+    // ESP.restart();
+  }
+}
+
+void callAPI() {
+  if (WiFi.status() == WL_CONNECTED) {
+    WiFiClient client;
+    HTTPClient http;
+
+    http.begin(client, serverName); // Kết nối tới server Flask
+    int httpCode = http.GET();     // Gửi yêu cầu GET
+
+    if (httpCode > 0) {            // Kiểm tra mã phản hồi HTTP
+      String payload = http.getString();  // Nhận phản hồi JSON từ server
+      Serial.println("Received response:");
+      Serial.println(payload);
+
+      // Phân tích JSON
+      DynamicJsonDocument doc(1024);
+      DeserializationError error = deserializeJson(doc, payload);
+      if (error) {
+        Serial.print("JSON parse error: ");
+        Serial.println(error.c_str());
+        return;
+      }
+
+      // Duyệt qua mảng JSON và cập nhật trạng thái đèn
+      for (JsonObject device : doc.as<JsonArray>()) {
+        String room = device["room"];
+        String deviceName = device["device"];
+        int state = device["state"];
+
+        // Đồng bộ trạng thái chân pin với trạng thái từ API
+        if (room == "livingroom" && deviceName == "light") {
+          digitalWrite(L1, state == 1 ? HIGH : LOW);
+        } else if (room == "bedroom" && deviceName == "light") {
+          digitalWrite(L2, state == 1 ? HIGH : LOW);
+        } else if (room == "kitchen" && deviceName == "light") {
+          digitalWrite(L3, state == 1 ? HIGH : LOW);
+        } else if (room == "staircase" && deviceName == "light") {
+          digitalWrite(L4, state == 1 ? HIGH : LOW);
+        }
+
+        // In trạng thái ra Serial
+        String stateStr = (state == 1) ? "Bật" : "Tắt";
+        Serial.print("Phòng: ");
+        Serial.print(room);
+        Serial.print(", Thiết bị: ");
+        Serial.print(deviceName);
+        Serial.print(", Trạng thái: ");
+        Serial.println(stateStr);
+      }
+    } else {
+      Serial.print("HTTP GET failed, error: ");
+      Serial.println(http.errorToString(httpCode).c_str());
+    }
+
+    http.end(); // Đóng kết nối HTTP
+  } else {
+    Serial.println("WiFi not connected. Skipping API call.");
+  }
+}
+
+
+void setup() {
+  Serial.begin(115200);
+  delay(10);
+
+  pinMode(L1, OUTPUT); // Đèn phòng khách
+  pinMode(L2, OUTPUT); // Đèn phòng ngủ
+  pinMode(L3, OUTPUT); // Đèn bếp
+  pinMode(L4, OUTPUT); // Đèn cầu thang
+
+  connectToWiFi(); // Kết nối Wi-Fi
+}
+
+
+void loop() {
+  // Gọi API định kỳ
+  if ((millis() - lastTime) > timerDelay) {
+    callAPI();
+    lastTime = millis();
+  }
+}

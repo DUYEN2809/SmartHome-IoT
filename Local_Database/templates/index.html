@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recorder</title>
+    <script src="/static/main.js" defer></script>
+    
+</head>
+<body>
+    <div>
+        <!-- Phần tử để phát âm thanh -->
+        <audio id="responseAudio" controls style="display:none;">
+            <source id="audioSource" type="audio/wav">
+            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+        <button id="recordButton" style="font-size: 24px; padding: 20px;">Nói</button>
+        <p id="status"></p>
+    </div>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý trạng thái đèn</title>
+    <script>
+        async function toggleLight(room, device, state) {
+            const url = "/toggle_light";
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    room: room,
+                    device: device,
+                    state: state
+                })
+            });
+            const result = await response.json();
+            if (response.ok) {
+                alert(result.message);
+                location.reload(); // Tải lại trang để cập nhật trạng thái
+            } else {
+                alert("Lỗi: " + result.error);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Quản lý trạng thái đèn</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Phòng</th>
+                <th>Thiết bị</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for device in devices %}
+            <tr>
+                <td>{{ device.room }}</td>
+                <td>{{ device.device }}</td>
+                <td>{{ "Bật" if device.state == 1 else "Tắt" }}</td>
+                <td>
+                    <button onclick="toggleLight('{{ device.room }}', '{{ device.device }}', {{ 1 if device.state == 0 else 0 }})">
+                        {{ "Bật" if device.state == 0 else "Tắt" }}
+                    </button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

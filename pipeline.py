@@ -12,3 +12,4 @@ Pipeline này là một Class gọi là SmartHome_Pipeline. Nó sẽ có các ph
 Đầu vào của Class này là một file audio. Đầu ra là một file audio và file JSON chứa dữ liệu thông tin.
 
 """
+
