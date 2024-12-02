@@ -2,7 +2,7 @@
 
 Đây là một ứng dụng API được xây dựng bằng FastAPI. Dưới đây là các hướng dẫn để cài đặt và chạy dự án.
 
-## Chạy ứng dụng
+## Chạy ứng dụng A.I Server
 
 Ứng dụng của bạn được code trong file `SRAPI.py`. Để chạy ứng dụng FastAPI này bằng Uvicorn, sử dụng các lệnh dưới đây.
 
@@ -37,3 +37,15 @@ Nếu bạn muốn deploy API của mình lên internet, hãy sử dụng tunnel
 ```bash
 ngrok http 8000
 ```
+
+## Chạy ứng dụng Local Database
+
+Để chạy local database, bạn cần truy cập /Local_Database ở repo này và sử dụng lệnh sau:
+```bash
+cd /Local_Database
+python app.py
+```
+## TEMPLATE arduino với ESP8266
+
+Đây là một template cho Arduino của ESP8266.
+Đường dẫn template: SmartHome-IoT\Local_Database\arduino
