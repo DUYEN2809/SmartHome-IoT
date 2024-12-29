@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sửa thiết bị</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Sửa thiết bị</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="flash-messages">
+            {% for category, message in messages %}
+              <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+
+        <form id="editForm" action="/edit_device/{{ device[0] }}" method="post">
+            <label for="room">Phòng:</label>
+            <select name="room" id="room">
+                {% for room in rooms %}
+                <option value="{{ room }}" {% if room == device[1] %}selected{% endif %}>{{ room }}</option>
+                {% endfor %}
+            </select><br>
+            <label for="device">Thiết bị:</label>
+            <select name="device" id="device">
+                {% for device_type in device_types %}
+                <option value="{{ device_type }}" {% if device_type == device[2] %}selected{% endif %}>{{ device_type }}</option>
+                {% endfor %}
+            </select><br>
+            <label for="state">Trạng thái:</label>
+            <select name="state" id="state">
+                <option value="0" {% if device[3] == 0 %}selected{% endif %} style="color: #D50000">Tắt</option>
+                <option value="1" {% if device[3] == 1 %}selected{% endif %} style="color: #2E7D32">Bật</option>
+            </select><br>
+            <label for="pin_notes">Ghi chú chân pin:</label>
+            <textarea name="pin_notes" id="pin_notes">{{ device[4] }}</textarea><br>
+            <label for="expert_password">Mật khẩu chuyên gia:</label>
+            <input type="password" name="expert_password" id="expert_password" required><br>
+            <button type="submit">Cập nhật</button>
+            <button type="submit" class="button-delete" onclick="addDeleteField()">Xóa</button>
+        </form>
+    </div>
+
+    <script>
+        function addDeleteField() {
+            // Thêm input hidden 'delete' vào form trước khi submit
+            var form = document.getElementById("editForm");
+            var input = document.createElement("input");
+            input.type = "hidden";
+            input.name = "delete";
+            input.value = "true";
+            form.appendChild(input);
+        }
+    </script>
+</body>
+</html>

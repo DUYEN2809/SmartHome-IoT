@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Flash Messages */
+.flash-messages {
+    list-style: none;
+    padding: 0;
+}
+
+.flash-messages li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.flash-messages .error {
+    background-color: #fdd;
+    border: 1px solid #faa;
+}
+
+.flash-messages .success {
+    background-color: #dfd;
+    border: 1px solid #afa;
+}
+
+/* ... (các CSS khác giữ nguyên) ... */
+
+/* Styles cho trạng thái thiết bị */
+.state-on {
+    color: #2E7D32; /* Màu xanh đậm cho chữ trạng thái Bật */
+}
+
+.state-off {
+    color: #D50000; /* Màu đỏ đậm cho chữ trạng thái Tắt */
+}
+
+.button-on {
+    background-color: #4CAF50; /* Màu xanh lá cho nút Bật */
+    color: white;
+}
+
+.button-off {
+    background-color: #f44336; /* Màu đỏ cho nút Tắt */
+    color: white;
+}
+
+/* Hiệu ứng hover cho button */
+.button-on:hover {
+    background-color: #3e8e41;
+}
+
+.button-off:hover {
+    background-color: #da190b;
+}
+
+/* Căn giữa bảng */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    text-align: center;
+}
+/* ... (các CSS khác giữ nguyên) ... */
+
+/* Cho màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        width: 95% /* Giảm độ rộng của container */
+    }
+
+    table {
+        font-size: 14px; /* Giảm kích thước chữ trong bảng */
+    }
+
+    th, td {
+        padding: 5px; /* Giảm padding của các ô trong bảng */
+    }
+
+    /* Ẩn cột ghi chú chân pin trên điện thoại */
+    th:nth-child(4),
+    td:nth-child(4) {
+        display: none;
+    }
+
+    /* Chuyển các nút bấm thành block để dễ thao tác */
+    button,
+    a {
+        display: block;
+        width: 80%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+/* Cho màn hình nhỏ hơn 480px (điện thoại nhỏ) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px; /* Giảm kích thước tiêu đề */
+    }
+
+    /* Ẩn luôn nút "Sửa" trên điện thoại nhỏ */
+    td:nth-child(5) a {
+        display: none;
+    }
+}
+/* ... (các CSS khác giữ nguyên) ... */
+
+.button-delete {
+    background-color: #dc3545; /* Màu đỏ */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+.button-delete:hover {
+    background-color: #c82333; /* Màu đỏ đậm hơn khi hover */
+}

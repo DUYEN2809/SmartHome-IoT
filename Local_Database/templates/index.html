@@ -5,25 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voice Recorder</title>
     <script src="/static/main.js" defer></script>
-    
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <div>
-        <!-- Phần tử để phát âm thanh -->
-        <audio id="responseAudio" controls style="display:none;">
-            <source id="audioSource" type="audio/wav">
-            Trình duyệt của bạn không hỗ trợ phát âm thanh.
-        </audio>
-    </div>
-    <div style="text-align: center; margin-top: 50px;">
-        <button id="recordButton" style="font-size: 24px; padding: 20px;">Nói</button>
-        <p id="status"></p>
-    </div>
-</body>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý trạng thái đèn</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="/add_device">Thêm thiết bị</a></li>
+                <li><a href="/change_password">Thay đổi mật khẩu</a></li>
+                <li><a href="/logout">Đăng xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <!-- Phần tử để phát âm thanh -->
+                <audio id="responseAudio" controls style="display:none;">
+                    <source id="audioSource" type="audio/wav">
+                    Trình duyệt của bạn không hỗ trợ phát âm thanh.
+                </audio>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <button id="recordButton" style="font-size: 24px; padding: 20px;">Nói</button>
+                <p id="status"></p>
+            </div>
+            <h1>Quản lý trạng thái đèn</h1>
+            <!-- ... (phần code khác giữ nguyên) ... -->
+<!-- ... (phần code khác giữ nguyên) ... -->
+<!-- ... (phần code khác giữ nguyên) ... -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Phòng</th>
+            <th>Thiết bị</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for device in devices %}
+        <tr>
+            <td>{{ device.room }}</td>
+            <td>{{ device.device }}</td>
+            <td class="{{ 'state-on' if device.state == 1 else 'state-off' }}">
+                {{ "Bật" if device.state == 1 else "Tắt" }}
+            </td>
+            <td>
+                <button class="{{ 'button-on' if device.state == 0 else 'button-off' }}" onclick="toggleLight('{{ device.room }}', '{{ device.device }}', {{ 1 if device.state == 0 else 0 }})">
+                    {{ "Bật" if device.state == 0 else "Tắt" }}
+                </button>
+                <a href="/edit_device/{{ device.id }}">Sửa</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<!-- ... (phần code khác giữ nguyên) ... -->
+        </div>
+    </main>
     <script>
         async function toggleLight(room, device, state) {
             const url = "/toggle_light";
@@ -47,32 +88,5 @@
             }
         }
     </script>
-</head>
-<body>
-    <h1>Quản lý trạng thái đèn</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Phòng</th>
-                <th>Thiết bị</th>
-                <th>Trạng thái</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for device in devices %}
-            <tr>
-                <td>{{ device.room }}</td>
-                <td>{{ device.device }}</td>
-                <td>{{ "Bật" if device.state == 1 else "Tắt" }}</td>
-                <td>
-                    <button onclick="toggleLight('{{ device.room }}', '{{ device.device }}', {{ 1 if device.state == 0 else 0 }})">
-                        {{ "Bật" if device.state == 0 else "Tắt" }}
-                    </button>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Thêm thiết bị</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thêm thiết bị</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="flash-messages">
+            {% for category, message in messages %}
+              <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        <form action="/add_device" method="post">
+            <label for="room">Phòng:</label>
+            <select name="room" id="room">
+                {% for room in rooms %}
+                <option value="{{ room }}">{{ room }}</option>
+                {% endfor %}
+            </select><br>
+            <label for="device">Thiết bị:</label>
+            <select name="device" id="device">
+                {% for device_type in device_types %}
+                <option value="{{ device_type }}">{{ device_type }}</option>
+                {% endfor %}
+            </select><br>
+            <label for="state">Trạng thái:</label>
+            <select name="state" id="state">
+                <option value="0">Tắt</option>
+                <option value="1">Bật</option>
+            </select><br>
+            <label for="pin_notes">Ghi chú chân pin:</label>
+            <textarea name="pin_notes" id="pin_notes"></textarea><br>
+            <label for="expert_password">Mật khẩu chuyên gia:</label>
+            <input type="password" name="expert_password" id="expert_password" required><br>
+            <button type="submit">Thêm</button>
+        </form>
+    </div>
+</body>
+</html>
